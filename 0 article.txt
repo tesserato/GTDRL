@@ -1,0 +1,90 @@
+Professor, segue a proposta de artigo para a disciplina. O código, exemplos e o próprio artigo podem ser acompanhados em https://github.com/tesserato/GTDRL. Aguardo seu parecer para continuar, eventualmente, os trabalhos.
+
+
+
+
+Abstract
+Research in the interface of game theory and artificial intelligence, in the context of reinforcement learning (Sandholm and Crites 1996) and neural networks (Horie and Aiyoshi 1998) for instance, is being conducted since at last late nineties, and has lead to the discovery of some relevant results: Hu, Wellman, and others (1998), for instance, proved that, under certain conditions, a Q-learning (Watkins 1989) based multiagent framework converges to a Nash equilibrium (provided only one exists).
+
+Further work by Hu and Wellman (2003) proposed a refinement to the Q-learning algorithm, dubbed Nash Q-learning, to improve convergence in noncooperative multiagent games, while Wang and Sandholm (2003) formulated an algorithm that provably converges, in case of multiple Nash equilibria, to the optimal one.
+
+In fact, research comparing reinforcement learning and game theoretic results continue to be actively conducted until the present day.
+
+Adopting a somewhat different approach, Erev and Roth (1998) proposed an analogous investigation focused on the development of predictive/descriptive general theories of behavior in settings where players did not possess perfect rationality, that outperforms classical equilibrium predictions in real-world scenarios.
+
+Of the recent developments in this direction, focused on elaboration of best real-world policies, perhaps the most noteworthy is the work of Mnih et al. (2015), published in Nature, where agents learn human level policies in Atari games, introducing deep Q-learning in the scene; that line of research was further extended in Silver et al. (2016), where an agent was trained to play the game Go, regarded as the most difficult classical game, to the level of besting the human European Go champion.
+
+this paper provides a model for the formulation of game theory inspired policies for groups of agents able to move in a discrete grid and willing to fulfill diverging goals. The proposed model, designed to be as generic as possible, can further be tailored to a number of specific situations and can be regarded as a generalization of Stackelberg Security Games (in the sense that multiple individual agents are considered in each of the groups and mixed strategies are allowed for both groups), already modelled from Game Theoretic principles implemented via A.I. practices: “Security games is a novel area of research that is based on computational and behavioral game theory, while also incorporating elements of AI planning under uncertainty and machine learning.” (Tambe and Sinha 2015)
+
+The model, pre-trained with the assumption of rationality and perfect information, can effortlessly be adjusted online, in the course of its real-world utilization, so as to improve its policy accounting for potential bounds in rationality and incomplete information.
+
+Examples of real-world applications include border monitoring, fireman allocation, inspection schedule planning, smuggling suppression policies, among many others
+
+keywords: Stackelberg Security Games, Game Theory, Machine Learning, Reinforcement Learning
+
+Bibliography
+Erev, Ido, and Alvin E Roth. 1998. “Predicting How People Play Games: Reinforcement Learning in Experimental Games with Unique, Mixed Strategy Equilibria.” American Economic Review. JSTOR, 848–81.
+
+Horie, R., and E. Aiyoshi. 1998. “Neural Networks Realization of Searching Models for Nash Equilibrium Points and Their Application to Associative Memories.” In SMC98 Conference Proceedings. 1998 IEEE International Conference on Systems, Man, and Cybernetics (Cat. No.98CH36218). IEEE. https://doi.org/10.1109/icsmc.1998.728171.
+
+Hu, Junling, and Michael P Wellman. 2003. “Nash Q-Learning for General-Sum Stochastic Games.” Journal of Machine Learning Research 4 (Nov): 1039–69.
+
+Hu, Junling, Michael P Wellman, and others. 1998. “Multiagent Reinforcement Learning: Theoretical Framework and an Algorithm.” In ICML, 98:242–50. Citeseer.
+
+Mnih, Volodymyr, Koray Kavukcuoglu, David Silver, Andrei A Rusu, Joel Veness, Marc G Bellemare, Alex Graves, et al. 2015. “Human-Level Control Through Deep Reinforcement Learning.” Nature 518 (7540). Nature Publishing Group: 529.
+
+Sandholm, Tuomas W., and Robert H. Crites. 1996. “Multiagent Reinforcement Learning in the Iterated Prisoner’s Dilemma.” Biosystems 37 (1-2). Elsevier BV: 147–66. https://doi.org/10.1016/0303-2647(95)01551-5.
+
+Silver, David, Aja Huang, Chris J Maddison, Arthur Guez, Laurent Sifre, George Van Den Driessche, Julian Schrittwieser, et al. 2016. “Mastering the Game of Go with Deep Neural Networks and Tree Search.” Nature 529 (7587). Nature Publishing Group: 484.
+
+Tambe, Milind, and Arunesh Sinha. 2015. “Stackelberg Security Games ( Ssg ) Basics and Application Overview.” In.
+
+Wang, Xiaofeng, and Tuomas Sandholm. 2003. “Reinforcement Learning to Play an Optimal Nash Equilibrium in Team Markov Games.” In Advances in Neural Information Processing Systems, 1603–10.
+
+Watkins, Christopher John Cornish Hellaby. 1989. “Learning from Delayed Rewards.” PhD thesis, King’s College, Cambridge.
+
+Further Reading
+Babes, Monica, Michael Wunder, and Michael Littman. 2009. “Q-Learning in Two-Player Two-Action Games.” In Autonomous Learning Agents Workshop at the 8th Int. Conf. On Autonomous Agents and Multiagent Systems (Aamas 2009).
+
+Bakker, Bram. 2002. “Reinforcement Learning with Long Short-Term Memory.” In Advances in Neural Information Processing Systems, 1475–82.
+
+Darmon, Eric, and Roger Waldeck. 2005. “Convergence of Reinforcement Learning to Nash Equilibrium: A Search-Market Experiment.” Physica A: Statistical Mechanics and Its Applications 355 (1). Elsevier BV: 119–30. https://doi.org/10.1016/j.physa.2005.02.074.
+
+Friedrich, Johannes, and Walter Senn. 2012. “Spike-Based Decision Learning of Nash Equilibria in Two-Player Games.” PLoS Computational Biology 8 (9). Public Library of Science: e1002691.
+
+Harper, Marc, Vincent Knight, Martin Jones, Georgios Koutsovoulos, Nikoleta E Glynatsi, and Owen Campbell. 2017. “Reinforcement Learning Produces Dominant Strategies for the Iterated Prisoner’s Dilemma.” PloS One 12 (12). Public Library of Science: e0188046.
+
+Hausknecht, Matthew, and Peter Stone. 2015. “Deep Recurrent Q-Learning for Partially Observable Mdps.” CoRR, Abs/1507.06527 7 (1).
+
+He, Xing, Junzhi Yu, Tingwen Huang, Chuandong Li, and Chaojie Li. 2014. “Neural Network for Solving Nash Equilibrium Problem in Application of Multiuser Power Control.” Neural Networks 57. Elsevier: 73–78.
+
+Kamra, Nitin, Umang Gupta, Fei Fang, Yan Liu, and Milind Tambe. 2018. “Policy Learning for Continuous Space Security Games Using Neural Networks.” Thirty-Second AAAI Conference on Artificial Intelligence.
+
+Korukhova, Yulia, and Sergey Kuryshev. 2017. “Training Agents with Neural Networks in Systems with Imperfect Information.” In ICAART (1), 296–301.
+
+Liu, Xingfeng, Tiansong Zhou, and Zhongxia Zheng. 2015. “Complex Information Game Problem Based on Artificial Neural Network.” In International Conference on Logistics Engineering, Management and Computer Science (Lemcs 2015). Atlantis Press.
+
+Marchiori, Davide, and Massimo Warglien. 2008. “Predicting Human Interactive Learning by Regret-Driven Neural Networks.” Science 319 (5866). American Association for the Advancement of Science: 1111–3.
+
+Narasimhan, Karthik, Tejas D Kulkarni, and Regina Barzilay. 2015. “Language Understanding for Textbased Games Using Deep Reinforcement Learning.” In In Proceedings of the Conference on Empirical Methods in Natural Language Processing. Citeseer.
+
+Oliehoek, Frans A, Rahul Savani, Jose Gallego-Posada, Elise Van der Pol, Edwin D De Jong, and Roderich Groß. 2017. “GANGs: Generative Adversarial Network Games.” arXiv Preprint arXiv:1712.00679.
+
+Pérolat, Julien, Florian Strub, Bilal Piot, and Olivier Pietquin. 2016. “Learning Nash Equilibrium for General-Sum Markov Games from Batch Data.” arXiv Preprint arXiv:1606.08718.
+
+Schuurmans, Dale, and Martin A Zinkevich. 2016. “Deep Learning Games.” In Advances in Neural Information Processing Systems, 1678–86.
+
+Sgroi, Daniel, and Daniel J Zizzo. 2007. “Neural Networks and Bounded Rationality.” Physica A: Statistical Mechanics and Its Applications 375 (2). Elsevier: 717–25.
+
+Spiliopoulos, Leonidas. 2011. “Learning Backward Induction: A Neural Network Agent Approach.” In Agent-Based Approaches in Economic and Social Complex Systems Vi, 61–73. Springer.
+
+Tamer, Basar. 2018. Handbook of Dynamic Game Theory. Springer. https://www.amazon.com/Handbook-of-Dynamic-Game-Theory/dp/3319443747?SubscriptionId=AKIAIOBINVZYXZQZ2U3A&tag=chimbori05-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=3319443747.
+
+Urban, Sebastian, Marcus Basalla, and Patrick van der Smagt. 2017. “Gaussian Process Neurons Learn Stochastic Activation Functions.” arXiv Preprint arXiv:1711.11059.
+
+Vassiliades, Vassilis, and Chris Christodoulou. 2010. “Multiagent Reinforcement Learning in the Iterated Prisoner’s Dilemma: Fast Cooperation Through Evolved Payoffs.” In Neural Networks (Ijcnn), the 2010 International Joint Conference on, 1–8. IEEE.
+
+Wang, Weixun, Jianye Hao, Yixi Wang, and Matthew Taylor. 2018. “Towards Cooperation in Sequential Prisoner’s Dilemmas: A Deep Multiagent Reinforcement Learning Approach.” arXiv Preprint arXiv:1803.00162.
+
+Wierstra, Daan, Alexander Förster, Jan Peters, and Jürgen Schmidhuber. 2010. “Recurrent Policy Gradients.” Logic Journal of the IGPL 18 (5). Oxford University Press: 620–34.
+
